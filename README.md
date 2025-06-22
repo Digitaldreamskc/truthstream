@@ -88,7 +88,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Deployment
 
-The application is deployed at: https://digitaldreamskc.io
+The application is deployed at:https://brilliant-chebakia-7097a3.netlify.app/
 
 ## Support
 
