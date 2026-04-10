@@ -1,6 +1,22 @@
 # TruthStream - Blockchain News Verification Platform
-
+ A blockchain-based news verification platform on Base (Ethereum L2). 
+ Journalists and citizens upload content, which gets cryptographically hashed and recorded on-chain to create tamper-proof provenance records.
 A modern web application that enables journalists and citizens to upload, verify, and share news content using blockchain technology on the Base network.
+ 
+ #To Make It Functional (Priority Order)
+
+*Get a WalletConnect project ID at cloud.walletconnect.com
+
+*Write and deploy a ContentVerifier.sol contract to Base Sepolia (just needs verifyContent(bytes32 hash) and
+  getVerification(bytes32 hash)
+  
+*Wire real contract reads/writes using Wagmi's useWriteContract / useReadContract
+
+*Add actual file hashing (crypto.subtle.digest or ethers.utils.keccak256) before submission
+
+*Integrate IPFS (Pinata or web3.storage) for actual file storage
+
+*Replace hardcoded mock data with real contract event queries
 
 ## Features
 
@@ -18,7 +34,7 @@ A modern web application that enables journalists and citizens to upload, verify
 - **Blockchain**: Base (Ethereum L2) via Wagmi
 - **Icons**: Lucide React
 - **Wallet Integration**: WalletConnect + Injected wallets
-
+- 
 ## Getting Started
 
 ### Prerequisites
